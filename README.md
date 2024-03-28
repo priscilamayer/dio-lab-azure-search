@@ -1,1 +1,15 @@
-# dio-lab-azure-search
+# Desafio Azure AI Search
+Este documento tem por objetivo descrever o exercício realizado durante o módulo "Azure Cognitive Search: Utilizando AI Search para indexação e consulta de Dados" do curso "Microsoft Azure AI Fundamentals" da plataforma [DIO](https://web.dio.me). Neste módulo seguimos a documentação [Explore an Azure AI Search Index](https://aka.ms/ai900-ai-search) para testar o serviço de buscas cognitivas desta plataforma do Microsoft Azure. Esta documentaçãp nos dá como exemplo a análise de sentimento de revisões de clientes de uma franquia de cafés, utilizando alguns filtros de buscas.
+
+💡 Tendo em vista que minha conta no Microsoft Azure está em inglês, alguns termos utilizados no texto estarão neste idioma.
+
+## Configurando a Pesquisa no Azure AI Search
+Considerando-se que o passo a passo detalhado encontra-se na documentação acima citada, apenas destacarei alguns pontos, pois esse processo é mais longo e detalhado que os anteriores, o que acarretaria em um documento muito longo. Para a utilização desse serviço de pesquisa da Microsoft Azure é necessário selecionar planos não gratuitos, por isso recomenda-se deletar ao final o projeto criado no decorrer do exercício, para não ser cobrado depois. Duas "resources" são criadas e interligadas para esse projeto, uma no "AI Search" e outra no "Azure AI Services". Em seguida, é necessário criar uma "Storage Account", onde serão armazenados os dados que serão analisados pela inteligência artificial.
+Os dados e nomes utilizados neste exercício estão especificados na documentação, assim como o arquivo zip com os dados de análise da pesquisa para download. Posteriormente importamos os dados desse arquivo no container criado. Então configuramos os campos de enriquecimento dos dados, no caso desse exercício foram: locations, keyphrases, sentiment, imageTags, imageCaption; e também configuramos o index e o indexer. Após todas essas configurações, retornamos para a página inicial do Azure AI Search e na aba "Search Management" selecionamos o indexer criado e o sistema o revisa automaticamente.
+Com todos esses passos realizados, a pesquisa já está pronta para ser realizada, é só ir em "Overview" -> "Search Explorer" que aparece a caixa onde colamos os comandos indicados na documentação para testar a pesquisa criada e observar os resultados que podem ser gerados.
+
+## Analisando os Resultados
+Pode-se perceber com este exercício que esta ferramenta de inteligência artificial da Microsoft Azure pode ser muito útil para empresas, comércios, páginas web, por exemplo, pois possibilita uma interpretaçao mais rápida sobre a satisfação dos clientes em relação aos serviços prestadoes e/ou produtos ofertados com a utilização da inteligência artificial. Outra vantagem é que não é preciso saber programação para utilizar essa ferramenta, pois o programa já está pronto, só é necessário saber construir os arquivos com os dados que serão interpretados e analisados.
+
+## 💻 Programas Utilizados
+![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
